@@ -7,7 +7,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 const Product=({title,image,description,price})=>{
     return(
-        <article className="product mb-3">
+        <article className="product">
             <Image className="" image={image} desc={description}/>
             <SizeSelector/>
             <WishButton/>
@@ -23,21 +23,21 @@ const Image=({image,desc})=>
 <img className="product-img" src={image} alt={desc}/>
 
 const SizeSelector=()=>
-<section className="size-selector bg-light row" style={{"marginTop":"-30px"}}>
+<section className="size-selector" style={{"marginTop":"-30px"}}>
     <div> Select A Size</div>
-    <span className="col">XS</span>
-    <span className="col">S</span>
-    <span className="col">M</span>
-    <span className="col">L</span>
-    <span className="col">XL</span>
+    <span className="">XS</span>
+    <span className="">S</span>
+    <span className="">M</span>
+    <span className="">L</span>
+    <span className="">XL</span>
 
 
 </section>
 
-const ColorSelector=()=><section className="color-selector row">
-<span className=" bg-danger"></span>
-<span className=" bg-primary"></span>
-<span className=" bg-light"></span>
+const ColorSelector=()=><section className="color-selector">
+<span className=""></span>
+<span className=""></span>
+<span className=""></span>
 
 
 

@@ -7,10 +7,10 @@ import products from '../model/product'
 function ProductList(){
   
     return (
-      <div className='container'>
-        <ul className='row product-list'>
+      <div className=''>
+        <ul className='product-list'>
           {products.map(({id,title,image,description,price})=>
-            <li className='col' key={id}>
+            <li className='' key={id}>
               <Product title={title} image={image} description={description} price={price}/>
             </li>
           )}

@@ -1,0 +1,20 @@
+.product-img {
+  height: 250px;
+  width: 250px;
+}
+.product {
+  height: 350px;
+  width: 250px;
+}
+.size-selector {
+  opacity: 0.7;
+}
+
+.color-selector span {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 5px;
+  border-radius: 100%;
+  border: 1px solid lightgray;
+}

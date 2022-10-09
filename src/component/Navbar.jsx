@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar(){
 
     const [current,setCurrent]=useState('')
+    const[toggle,setToggle]=useState(false)
    
 
     const navLink=[
@@ -28,29 +29,28 @@ function Navbar(){
     ]
 
     return(
-      <nav>
-    <ul className="">
-        <li className=" ">
-            <Link to="sale" className="" >Sale</Link>
-        </li>
-      {navLink.map(link=>(
-                         <li className="" key={link.title} onMouseEnter={()=>setCurrent(link.title)} onMouseLeave={()=>setCurrent('')}> 
-                         <Link className="" to={link.title}>{link.title}</Link>
-                         {
-                            <ul className="">
-                            {link.isSubmenu &&(                                    
-                                        link.sublinks.map(sublink=>(
-                                            <li key={sublink} className={current===link.title?"":""}>
-                                                <Link to={sublink}>{sublink}</Link>
-                                            </li>
-                                        ))          
-                            )}
-                            </ul>
-                         }                      
-                     </li>
-                    ))}
-        
-      </ul>
+      <nav className="navbar">
+        <div className="brand-title">Shopping</div>
+        <Link className="toggle-button" onClick={e=>{
+            console.log(toggle)
+            setToggle(!toggle)
+            }}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            
+        </Link>
+        <div className={`nav-links ${toggle?"active":""}`}>
+            <ul>
+                {navLink.map(link=>
+                
+                <li>
+                    <Link to="sale" className="" >{link}</Link>
+                </li>
+                    
+                )}
+            </ul>
+        </div>
       </nav>
     )
 }

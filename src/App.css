@@ -1,35 +1,3 @@
-.product-list{
-    width: 90vw;
-    display: grid;
-    gap: 3rem;
-}
-.product-img{
-    height: 250px;
-    width: 250px;
-  }
-  .product{
-    height:350px;
-    width: 250px;
-  }
-.size-selector{
-  opacity: .7;
-}
-ul{
-  list-style: none;
-}
-ul a{
-  text-decoration: none;
-}
-
-nav ul li a:hover{
-
-
-}
-.color-selector span{
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin-right: 5px;
-  border-radius: 100%;
-  border: 1px solid lightgray;
-}
+@import './styles/navbar.css';
+@import './styles/product.css';
+@import './styles/productList.css';

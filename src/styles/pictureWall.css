@@ -1,0 +1,24 @@
+.picture-wall {
+  text-align: center;
+  width: 100%;
+}
+
+.picture-frame-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.picture-frame-list .picture-frame {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.picture-frame-list .picture-frame img {
+  width: 250px;
+  height: 250px;
+}
+.picture-frame-list .picture-frame p {
+  text-align: center;
+  text-transform: capitalize;
+}/*# sourceMappingURL=pictureWall.css.map */

@@ -1,0 +1,10 @@
+.showcase .heading {
+  text-transform: capitalize;
+  text-align: center;
+}
+.showcase .main {
+  display: flex;
+}
+.showcase .main .products {
+  display: flex;
+}/*# sourceMappingURL=showcase.css.map */

@@ -1,0 +1,25 @@
+.infinityH {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+.infinityH .heading {
+  text-transform: capitalize;
+}
+.infinityH .display {
+  display: flex;
+}
+.infinityH .indicator .dot {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+  margin: 0 2px;
+}
+.infinityH .indicator .dot:hover {
+  background-color: #777;
+}/*# sourceMappingURL=infinityH.css.map */

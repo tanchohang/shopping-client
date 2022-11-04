@@ -1,0 +1,38 @@
+
+.product {  
+    width: 300px;
+    position: relative;
+    .product-img {
+      height: 300px;
+      width: 300px;
+    }
+  
+  
+    .size-selector {
+      opacity: 0.7;
+      background-color: white;
+      margin-top: -3rem;
+      cursor: pointer;
+    }
+  
+    .color-selector span {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin-right: 5px;
+      border-radius: 100%;
+      border: 1px solid lightgray;
+      cursor: pointer;
+    }
+  
+    .wishButton{
+      font-size: 1.5em;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      align-self: flex-start;
+      cursor: pointer;
+    }
+    
+  }
+  

@@ -1,0 +1,9 @@
+.multi-view .image-assets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.multi-view .image-assets img {
+  width: 200px;
+  height: 300px;
+}/*# sourceMappingURL=multiView.css.map */

@@ -1,2 +1,20 @@
-.product-list {
+  
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+
+    li{
+        list-style: none;
+    }
+        
 }
+@media (max-width:600px) {
+    .product-list{
+        justify-content: center;
+    }
+}
+
+
+

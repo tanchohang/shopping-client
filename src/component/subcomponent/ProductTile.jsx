@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-const Product = ({ title, image, description, price }) => {
+const ProductTile = ({ title, image, description, price }) => {
   return (
     <article className="product">
-      <Image className="" image={image} desc={description} />
+      <Image image={image} desc={description} />
       <SizeSelector />
       <WishButton />
       {/* <div className="row"><span className="col">{title}</span> <span className="col">£{price}</span></div> */}
@@ -23,7 +23,7 @@ const Image = ({ image, desc }) => (
 );
 
 const SizeSelector = () => (
-  <section className="size-selector" style={{ marginTop: '-30px' }}>
+  <section className="size-selector">
     <div> Select A Size</div>
     <span className="">XS</span>
     <span className="">S</span>
@@ -41,5 +41,6 @@ const ColorSelector = () => (
   </section>
 );
 
-const WishButton = () => <FontAwesomeIcon icon={faHeart} />;
-export default Product;
+const WishButton = () => 
+<div className='wishButton'><FontAwesomeIcon icon={faHeart} /></div>;
+export default ProductTile;

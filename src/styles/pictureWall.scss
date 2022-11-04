@@ -1,0 +1,27 @@
+.picture-wall{
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.picture-frame-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    .picture-frame{
+        margin-right: 2rem;
+        cursor: pointer;
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        p{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+    }
+}

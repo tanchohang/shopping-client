@@ -1,0 +1,30 @@
+.subProduct1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 240px;
+  height: 240px;
+}
+.subProduct1 img {
+  height: 240px;
+  width: 240px;
+}
+.subProduct1 .colors {
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.5rem;
+}
+.subProduct1 .colors span {
+  display: block;
+  background-color: cornflowerblue;
+  height: 15px;
+  width: 15px;
+}
+.subProduct1 .info {
+  display: flex;
+  gap: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.subProduct1 .info span {
+  display: inline-block;
+}/*# sourceMappingURL=subproduct1.css.map */

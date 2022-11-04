@@ -1,1 +1,15 @@
-/*# sourceMappingURL=productList.css.map */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.product-list li {
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=productList.css.map */

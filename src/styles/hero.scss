@@ -1,0 +1,28 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    img{
+        display: block;
+        width: 90%;
+    }
+    .info{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        width: 30%;
+        text-align: justify;
+    }
+    a{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #555;
+        background-color: #ffe;
+        padding: 10px 10px;
+        text-align: center;
+        display: inline-block;
+        width: 30%;
+    }
+}

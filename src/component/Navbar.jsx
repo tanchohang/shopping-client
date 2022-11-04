@@ -1,3 +1,5 @@
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
@@ -5,8 +7,8 @@ import { Link } from "react-router-dom";
 
 function Navbar(){
 
-    const [current,setCurrent]=useState('')
-    const[toggle,setToggle]=useState(false)
+    // const [current,setCurrent]=useState('');
+    const[toggle,setToggle]=useState(false);
    
 
     const navLink=[
@@ -26,33 +28,37 @@ function Navbar(){
             "isSubmenu":true,
             "sublinks":["new arrivals","winterwear","summerwear","topwear","outerwear"]
         }
-    ]
+    ];
 
     return(
       <nav className="navbar">
         <div className="brand-title">Shopping</div>
-        <Link className="toggle-button" onClick={e=>{
-            console.log(toggle)
-            setToggle(!toggle)
+        <span className="toggle-button" onClick={e=>{
+            setToggle(!toggle);
             }}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
             
-        </Link>
+        </span>
         <div className={`nav-links ${toggle?"active":""}`}>
             <ul>
                 {navLink.map(link=>
                 
-                <li>
-                    <Link to="sale" className="" >{link}</Link>
+                <li key={link.title}>
+                    <Link to={link.title} className="" >{link.title}</Link>
                 </li>
                     
                 )}
-            </ul>
+                </ul>
+                <Link to="cart">
+                    <i className="icons">
+                        <FontAwesomeIcon icon={faBagShopping} />
+                    </i>  
+                    </Link>    
         </div>
       </nav>
-    )
+    );
 }
 
 export default Navbar;

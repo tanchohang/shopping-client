@@ -1,0 +1,12 @@
+.multi-view{
+    
+    .image-assets{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        img{
+            width:  200px;
+            height: 300px;
+        }
+    }
+}

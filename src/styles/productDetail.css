@@ -1,0 +1,15 @@
+.product-detail .view-toggle a {
+  cursor: pointer;
+}
+.product-detail .product-view {
+  display: flex;
+  gap: 2rem;
+}
+.product-detail .product-view .image-viewer {
+  width: 50%;
+}
+.product-detail .product-view .description .buttons button {
+  cursor: pointer;
+  display: block;
+  text-transform: capitalize;
+}/*# sourceMappingURL=productDetail.css.map */

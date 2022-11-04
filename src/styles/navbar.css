@@ -6,8 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1490196078);
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 .navbar .brand-title {
   font-size: 1.5rem;
@@ -27,8 +30,8 @@
 .navbar .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  background-color: #000;
+  border-radius: 5px;
 }
 .navbar .nav-links ul {
   margin: 0;
@@ -40,13 +43,20 @@
   cursor: pointer;
 }
 .navbar .nav-links ul li a {
-  color: white;
+  color: #000;
   text-decoration: none;
   display: block;
   padding: 1rem;
+  text-transform: capitalize;
 }
 .navbar .nav-links ul li a:hover {
   background-color: #555;
+}
+.navbar .nav-links .icons {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #555;
 }
 
 @media (max-width: 600px) {
@@ -71,4 +81,4 @@
   .navbar .toggle-button {
     display: flex;
   }
-} /*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */

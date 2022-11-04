@@ -1,0 +1,46 @@
+.product-detail{
+    
+    .view-toggle{
+        a{
+            cursor: pointer;
+        }
+        .single{}
+        .multi{}
+    }
+    .product-view{
+        display: flex;
+        gap: 2rem;
+        
+        .image-viewer{
+            width: 50%;
+        }
+        .description{
+            .title{
+            }
+            .price{}
+
+            .colors{}
+            .sizes{}
+
+            .buttons{
+                .add-to-bag{
+                    
+                }
+                
+                button{
+                    cursor: pointer;
+                    display: block;
+                    text-transform: capitalize;
+
+
+                }
+            }
+
+        }
+        
+    }
+    .style-idea{}
+    .reccomendation{
+        
+    }
+}

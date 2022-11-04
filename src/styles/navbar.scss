@@ -6,8 +6,11 @@
   // flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 4px  #00000026;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 
   .brand-title {
     font-size: 1.5rem;
@@ -28,12 +31,13 @@
     .bar {
       height: 3px;
       width: 100%;
-      background-color: white;
-      border-radius: 10px;
+      background-color: #000;
+      border-radius: 5px;
     }
   }
 
-  .nav-links ul {
+  .nav-links {
+  ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -42,10 +46,11 @@
       list-style: none;
       cursor: pointer;
       a {
-        color: white;
+        color: #000;
         text-decoration: none;
         display: block;
         padding: 1rem;
+        text-transform: capitalize;
 
         &:hover {
           background-color: #555;
@@ -53,6 +58,14 @@
       }
     }
   }
+  .icons{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #555;
+  }
+}
+  
 }
 
 @media (max-width: 600px) {
